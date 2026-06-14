@@ -1,43 +1,243 @@
 # FinEdge
-### Social Intelligence for Modern Investors
 
-A full-featured investor community platform — share investment insights, follow market leaders, discover opportunities, and build your investor network.
+### Social Intelligence Platform for Modern Investors
+
+FinEdge is a full-stack fintech community platform designed to help investors discover market insights, participate in investment-focused communities, track high-signal discussions, and build professional investor networks.
+
+Unlike traditional social platforms, FinEdge focuses on investment intelligence, sentiment-driven discussions, thematic investment clubs, and financial knowledge sharing.
 
 ---
 
-## Tech Stack
+## Live Demo
 
-- **Frontend**: React 16, Redux, React Router
-- **Backend**: Node.js, Express 4
-- **Database**: MySQL
-- **Auth**: Session-based (client-sessions)
-- **Build**: Webpack 4 + Babel 6
-- **Styles**: Custom SCSS (dark fintech theme)
-- **Testing**: Jest + Enzyme
+
+
+**GitHub Repository:** [Add Repository Link]
+
+---
+
+## Project Overview
+
+Financial communities generate enormous amounts of valuable information, but most platforms are either:
+
+* Generic social networks not designed for investors
+* Market tools lacking community-driven intelligence
+* Forums with poor discovery and engagement mechanisms
+
+FinEdge bridges this gap by combining:
+
+* Investor networking
+* Market insight sharing
+* Community-driven investment discussions
+* Sentiment analysis
+* Watchlists
+* Investment clubs
+* Discovery systems
+
+into a unified platform.
+
+---
+
+## Key Highlights
+
+### Investor-Centric Social Layer
+
+Connect with investors, build a network, discover market participants, and engage with high-quality financial discussions.
+
+### Investment Clubs
+
+Create and join thematic investment communities focused on:
+
+* Growth Investing
+* FinTech
+* AI & Markets
+* Value Investing
+* Macroeconomics
+* Emerging Technologies
+
+### Market Sentiment System
+
+Every insight can be classified as:
+
+* ▲ Bullish
+* ▼ Bearish
+* ● Neutral
+
+allowing users to quickly understand community sentiment.
+
+### Trending Insights Engine
+
+Automatically surfaces high-engagement investment discussions based on community activity.
+
+### Watchlists
+
+Save and organize valuable insights for future research and monitoring.
+
+### Investor Messaging
+
+Private messaging system supporting:
+
+* Text
+* Images
+* Stickers
+
+for direct investor communication.
+
+### Market Alerts
+
+Real-time notifications for:
+
+* Likes
+* Comments
+* Mentions
+* Shares
+* Follows
+* Community activity
+
+---
+
+## Screenshots
+
+### Home Feed
+
+![Home Feed](screenshots/home-feed.png)
+
+### Investor Profile
+
+![Investor Profile](screenshots/profile.png)
+
+### Investment Clubs
+
+![Investment Clubs](screenshots/clubs.png)
+
+### Trending Insights
+
+![Trending Insights](screenshots/trending.png)
+
+### Market Discover
+
+![Market Discover](screenshots/discover.png)
+
+### Create Insight & Sentiment Selection
+
+![Sentiment System](screenshots/sentiment.png)
+
+---
+
+## System Architecture
+
+```text
+React + Redux Frontend
+          │
+          ▼
+Express.js REST API
+          │
+          ▼
+MySQL Database
+          │
+          ▼
+Media Storage & Processing
+```
+
+### Core Modules
+
+* Authentication & Session Management
+* Investor Profiles
+* Insight Feed
+* Investment Clubs
+* Watchlists
+* Messaging
+* Market Alerts
+* Search & Discovery
+* Trending Insights
+* Sentiment Classification
+
+---
+
+## Technology Stack
+
+### Frontend
+
+* React 16
+* Redux
+* React Router
+* SCSS
+* Webpack
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MySQL
+* MariaDB Compatible
+
+### Authentication
+
+* Session-Based Authentication
+* Protected Routes
+
+### Testing
+
+* Jest
+* Enzyme
+
+---
+
+## Premium UI System
+
+The platform was redesigned using a fintech-focused design language inspired by modern SaaS products.
+
+### Design Principles
+
+* Dark fintech dashboard aesthetic
+* Premium card system
+* Inter typography
+* Consistent spacing hierarchy
+* Market sentiment visual indicators
+* High information density with readability
+
+### Theme Tokens
+
+```text
+Background      #0B0F19
+Surface         #131A2A
+Accent          #22C55E
+Info            #38BDF8
+Bullish         #22C55E
+Bearish         #EF4444
+Neutral         #64748B
+```
 
 ---
 
 ## Features
 
-- 📊 Insight Feed — posts from investors you follow
-- 🔍 Market Discover — explore investors, insights, and Investment Clubs
-- 💬 Investor Messages — 1:1 direct messaging with text, images, stickers
-- 🔔 Market Alerts — 14 notification types (follows, likes, mentions, shares...)
-- 👥 Investment Clubs — public/private groups for investment themes
-- 🏷️ Cashtags — hashtag-style tagging for financial topics
-- 🔖 Watchlists — bookmark insights for later
-- 🧑‍💼 Investor Profile — bio, social links, post history, tags
-- ⚙️ Settings — password change, account type, deactivation
-- 🔐 Admin Panel — password-protected admin dashboard
+| Feature           | Description                           |
+| ----------------- | ------------------------------------- |
+| Insight Feed      | Personalized investor content feed    |
+| Market Discover   | Discover investors and communities    |
+| Investment Clubs  | Public and private investor groups    |
+| Sentiment System  | Bullish, Bearish, Neutral insights    |
+| Trending Insights | Community-driven discovery engine     |
+| Watchlists        | Save valuable market insights         |
+| Direct Messaging  | Investor-to-investor communication    |
+| Market Alerts     | Engagement and activity notifications |
+| Investor Profiles | Detailed investor identity system     |
+| Search System     | Search users, clubs and content       |
+| Admin Dashboard   | Administrative controls               |
 
 ---
 
-## Setup
+## Local Setup
 
 ### Requirements
-- Node.js
-- MySQL / MariaDB
-- [GraphicsMagick](http://www.graphicsmagick.org/) (for image processing)
+
+* Node.js
+* MySQL or MariaDB
+* GraphicsMagick
 
 ### Installation
 
@@ -45,55 +245,114 @@ A full-featured investor community platform — share investment insights, follo
 npm install
 ```
 
-### Database
-1. Create a MySQL database
-2. Import `db.sql`
+### Database Setup
 
-### Environment Variables
-Create a `.env` file:
-
-```
-PORT=3000
-SESSION_SECRET_LETTER="your-secret"
-MYSQL_HOST="localhost"
-MYSQL_USER="root"
-MYSQL_PASSWORD="password"
-MYSQL_DATABASE="finedge"
-MAIL="your-email@gmail.com"
-MAIL_PASSWORD="your-email-password"
-GOOGLE_GEOLOCATION_KEY="your-google-key"
-ADMIN_PASSWORD="admin-password"
-```
-
-### Run
+Create a database and import:
 
 ```bash
-# Start backend server
-npm start
+db.sql
+```
 
-# In a separate terminal — build frontend bundle
+Optional:
+
+```bash
+finedge-demo-data.sql
+```
+
+to populate the platform with investor-focused sample data.
+
+### Environment Variables
+
+```env
+PORT=3000
+
+SESSION_SECRET_LETTER=your-secret
+
+MYSQL_HOST=localhost
+MYSQL_USER=root
+MYSQL_PASSWORD=password
+MYSQL_DATABASE=finedge
+
+MAIL=your-email@gmail.com
+MAIL_PASSWORD=your-password
+
+GOOGLE_GEOLOCATION_KEY=your-key
+
+ADMIN_PASSWORD=your-admin-password
+```
+
+### Start Application
+
+Backend:
+
+```bash
+npm start
+```
+
+Frontend Build:
+
+```bash
 npm run dev
 ```
 
-Then visit `http://localhost:3000`
+Application:
+
+```text
+http://localhost:3000
+```
 
 ---
 
-## Acknowledgements & Project Origins
+## Engineering Improvements Implemented
 
-FinEdge is built upon the open-source [React-Instagram-Clone-2.0](https://github.com/yTakkar/React-Instagram-Clone-2.0) project originally developed by yTakkar and contributors. We respect and appreciate the work of the original authors. 
+The original codebase was transformed into a finance-focused platform through substantial architectural and product-level modifications.
 
-While preserving the core social features of the original codebase, FinEdge has undergone a complete transformation into a specialized social platform for modern investors. Major modifications and extensions include:
-- **FinEdge Branding**: Redefined the visual identity and platform focus specifically around finance and investment.
-- **Premium UI**: Designed a sleek, dark-themed fintech dashboard with modern typography, polished cards, and custom components to suit professional investors.
-- **Investment Clubs**: Redesigned the group mechanism into Investment Clubs tailored for thematic investing discussions, group research, and sharing.
-- **Watchlists & Sentiment System**: Implemented post bookmarking as asset Watchlists, along with a user sentiment classification system (Bullish/Bearish/Neutral tags) for asset discussions.
-- **Trending Insights & Cashtags**: Enhanced the hashtags system to function as financial cashtags and trending topics.
-- **Finance Demo Data**: Pre-populated migration/demo scripts (`finedge-demo-data.sql`) to reflect active investor conversations, financial ticker symbols, and realistic trading discussions.
+### Product Transformation
 
-FinEdge honors the original project's MIT license and operates in full transparency regarding its foundation.
+* Rebranded into FinEdge
+* Redesigned user journeys around investors
+* Introduced investment-focused terminology
+* Added market sentiment classification
+* Added investment clubs
+* Added watchlists
+* Added trending insights
+* Added finance-oriented demo ecosystem
+
+### User Experience Improvements
+
+* Premium fintech dark theme
+* Improved card architecture
+* Enhanced typography system
+* Professional empty states
+* Consistent visual hierarchy
+* Investor-focused discovery flows
+
+---
+
+## Acknowledgements
+
+FinEdge was built upon the open-source React-Instagram-Clone-2.0 project created by yTakkar and contributors.
+
+The original project served as a technical foundation, while FinEdge introduces significant product, design, branding, and feature transformations to support a specialized fintech investor community experience.
+
+All original licensing terms are respected and acknowledged.
+
+---
+
+## Future Roadmap
+
+Potential future enhancements:
+
+* Portfolio Tracking
+* Asset-Specific Discussion Hubs
+* Market Data Integrations
+* Advanced Search & Filtering
+* Reputation Scoring System
+* Community Analytics
+* Investor Verification System
 
 ---
 
 ## License
-ISC
+
+Please refer to the repository license file for licensing information.
