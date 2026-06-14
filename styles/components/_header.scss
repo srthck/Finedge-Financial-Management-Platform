@@ -1,0 +1,193 @@
+// Header
+.header{
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  background: $header;
+  z-index: 2;
+  box-shadow: 0 1px 0 $header_border;
+  border-bottom: 1px solid $header_border;
+
+  & > .logo {
+    position: absolute;
+    float: left;
+    left: 25px;
+    top: 6px;
+
+    & > a {
+      outline: none;
+
+      & > .finedge-text-logo{
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        color: $positive;
+        font-family: $family;
+        text-transform: uppercase;
+      }
+
+    }
+
+  }
+
+  & .search_box{
+    position: absolute;
+    left: 145px;
+    top: 6px;
+
+    & > input[type="text"].search{
+      background: $card_surface;
+      color: $text_primary;
+      padding: 7px 20px 7px 10px;
+      border: 1px solid $ee;
+      width: 500px;
+      font-size: 14px;
+
+      &::placeholder {
+        color: $text_secondary;
+      }
+
+      &.search:focus{
+        border: 1px solid $accent_blue !important;
+        box-shadow: 0px 0px 5px 1px rgba(56, 189, 248, 0.2) !important;
+      }
+
+    }
+
+    & > span.search_icon{
+      left: -28px;
+      top: -1px;
+      position: relative;
+
+      & > i{
+        font-size: 14px;
+        color: $text_secondary;
+      }
+
+    }
+
+  }
+
+  & > .header_right{
+    position: absolute;
+    float: left;
+    right: 10px;
+    overflow: inherit;
+
+    & > a{
+      border: 1px solid $header_border;
+      padding: 7px 9px 7px 7px;
+      border-radius: 52px;
+      text-align: center;
+      top: 2px;
+      position: relative;
+      outline: none;
+      line-height: 3;
+      color: $text_secondary;
+
+      &:hover{
+        background: $second_border;
+        color: $text_primary;
+      }
+
+      &:focus{
+        background: $second_border;
+        color: $text_primary;
+      }
+
+      & > img{
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: 7px;
+        border-radius: 50%;
+        margin-right: 3px;
+      }
+
+      & > span{
+        color: $text_primary;
+        font-size: 14px;
+      }
+
+    }
+
+    // for active links
+    .ha_active{
+      background: $second_border;
+      color: $text_primary;
+    }
+
+    & .notification{
+      margin-right: 20px;
+      border-radius: 3px !important;
+      border: 1px solid $ee !important;
+      padding: 6px 7px !important;
+
+      &::before{
+        content: "";
+      }
+
+      & > .notification_span{
+        position: relative;
+        display: inline-block;
+        top: 6px;
+        height: 23px;
+
+        & > i{
+          font-size: 23px;
+          color: $text_secondary;
+        }
+
+      }
+    }
+
+    & > .show_more{
+      position: relative;
+      border: 1px solid $header_border;
+      color: $text_secondary;
+      padding: 5px 0px;
+      top: 2px;
+      border-radius: 3px;
+      text-align: center;
+      margin-left: 0px;
+      cursor: pointer;
+
+      &:hover{
+        color: $text_primary;
+      }
+
+      & > i{
+        position: relative;
+        top: 8px;
+      }
+
+    }
+
+  }
+
+  & > .sp_options{
+    position: fixed;
+    right: 10px;
+    top: 55px;
+
+    &::before{
+      content: "";
+      background: $ff;
+      width: 11px;
+      height: 11px;
+      top: -6px;
+      position: absolute;
+      border-top: 1px solid $ee;
+      transform: rotate(45deg);
+      border-left: 1px solid $ee;
+      right: 9px;
+      z-index: -1;
+    }
+
+    & a{
+      width: 74px;
+    }
+
+  }
+
+}

@@ -1,0 +1,15 @@
+node_modules/
+.env
+env.js
+coverage/
+
+*.log
+*.err.log
+
+.vscode/
+
+dist/uploads/
+
+npm-debug.log
+yarn-error.log
+dist/

@@ -1,0 +1,39 @@
+:root {
+  --bg-main: #0B0F19;
+  --surface: #131A2A;
+  --surface-elevated: #1B2335;
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --accent: #22C55E;
+  --accent-hover: #16A34A;
+  --bullish: #22C55E;
+  --bearish: #EF4444;
+  --neutral: #64748B;
+  --info: #38BDF8;
+  --border: rgba(255, 255, 255, 0.06);
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.15);
+  --radius-btn: 16px;
+  --radius-card: 16px;
+}
+
+$family: 'Inter', sans-serif;
+$fb: var(--bg-main);
+$ff: var(--surface-elevated);
+$card_surface: var(--surface);
+$text_primary: var(--text-primary);
+$text_secondary: var(--text-secondary);
+$oo: var(--text-primary);
+$d_light: var(--text-secondary);
+$dark: var(--text-primary);
+$a: var(--info);
+$accent_blue: var(--info);
+$pric: var(--accent);
+$pric_dark: var(--bg-main);
+$positive: var(--bullish);
+$negative: var(--bearish);
+$ee: var(--border);
+$header_border: var(--border);
+$second_border: var(--surface-elevated);
+$third-border: var(--border);
+$header: var(--surface);
+$light_shadow: var(--shadow-card);

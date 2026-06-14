@@ -1,0 +1,73 @@
+.a_disabled{
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  background: #00965a !important;
+  opacity: 0.5;
+}
+
+.sec_btn_disabled{
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  color: $text_secondary !important;
+}
+
+.sec_btn{
+  border: 1px solid $ee;
+  background: $card_surface;
+  color: $text_primary;
+  border-radius: var(--radius-btn);
+  height: 44px;
+  cursor: pointer;
+  font-weight: 600;
+  outline: none;
+
+  &:hover{
+    color: $text_primary;
+    background-color: $second_border;
+    border-color: $accent_blue;
+  }
+
+  &:focus{
+    color: $text_primary;
+    background: $second_border;
+  }
+
+}
+
+.tir_btn{
+  border: 1px solid $ee;
+  background: $ff;
+  color: $text_primary;
+  border-radius: var(--radius-btn);
+  height: 44px;
+  cursor: pointer;
+  font-weight: 600;
+  outline: none;
+
+  &:hover{
+    color: $text_primary;
+    background-color: $card_surface;
+    border-color: $accent_blue;
+  }
+
+  &:focus{
+    color: $text_primary;
+    background-color: $card_surface;
+  }
+
+}
+
+.follow{
+  background: $pric !important;
+  border: 1px solid $pric !important;
+  color: $pric_dark !important;
+}
+
+.unfollow{
+  background: $card_surface !important;
+  color: $positive !important;
+  border: 1px solid $positive !important;
+
+  &:focus{ background: $ff; }
+
+}
