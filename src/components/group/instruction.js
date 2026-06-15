@@ -6,11 +6,11 @@ const GroupInstruction = ({ showBtns }) => (
   <div className="sabout_one">
     <img src="/images/tree.png" />
     <div className="sabout_one_info">
-      <span>Update or edit group to make it look more attractive</span>
+      <span>Complete your Investment Club profile to attract like-minded investors</span>
       {showBtns && (
         <Fragment>
-          <AppLink url="/" className="sec_btn" label="Update group" />
-          <AppLink url="/edit-profile" className="pri_btn" label="Edit group" />
+          <AppLink url="/" className="sec_btn" label="Update Club" />
+          <AppLink url="/edit-profile" className="pri_btn" label="Edit Club" />
         </Fragment>
       )}
     </div>

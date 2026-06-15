@@ -61,8 +61,7 @@ class Group extends Component {
     return (
       <div>
         <Title
-          value={name}
-          desc={`View ${name}'s posts, members and much more..`}
+          value={`View ${name}'s insights, members and more`}
         />
 
         <div
@@ -82,7 +81,7 @@ class Group extends Component {
             </Fragment>
           ) : (
             <div style={{ marginTop: 85 }}>
-              <Nothing mssg={`${name} group is private. Join to connect!!`} />
+              <Nothing mssg={`${name} Investment Club is private. Join to connect.`} />
             </div>
           )}
         </FadeIn>

@@ -12,11 +12,11 @@ const NotiSpeak = ({ un, session }) => {
       {un != 0 ? (
         <div className="noti_speak">
           <FadeIn duration="300ms">
-            <img src={`/users/${id}/avatar.jpg`} />
+            <img src={`/users/${id}/avatar.jpg`} alt="avatar" onError={e => { e.target.onerror = null; e.target.src = '/images/spacecraft.jpg' }} />
 
             <div className="n_s_sn_div">
               <span>
-                <b>@{username}</b>, you got {humanReadable(un, 'notification')}.
+                <b>@{username}</b>, you got {humanReadable(un, 'market alert')}.
               </span>
             </div>
           </FadeIn>

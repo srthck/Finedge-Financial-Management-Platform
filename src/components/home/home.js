@@ -10,7 +10,7 @@ import PostItTeaser from '../post/post-it/post-it-teaser'
 import { getUnreadMessages } from '../../actions/message'
 import PopularHashtags from '../hashtag/popular-hashtags'
 import TrendingPosts from '../others/trending/trending-posts'
-import { Instagram } from 'react-content-loader'
+import { Instagram as InsightSkeleton } from 'react-content-loader'
 import Feed from './feed'
 
 class Home extends Component {
@@ -41,9 +41,9 @@ class Home extends Component {
 
               {loading && (
                 <div style={{ marginTop: 20 }}>
-                  <Instagram />
-                  <Instagram />
-                  <Instagram />
+                  <InsightSkeleton />
+                  <InsightSkeleton />
+                  <InsightSkeleton />
                 </div>
               )}
 

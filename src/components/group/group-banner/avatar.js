@@ -29,7 +29,7 @@ class GroupAvatar extends Component {
           onMouseOver={this.toggleOptions}
           onMouseOut={this.toggleOptions}
         >
-          <img src={imgSrc} alt="avatar" />
+          <img src={imgSrc} alt="avatar" onError={e => { e.target.onerror = null; e.target.src = '/images/wheel.jpg' }} />
           <div className="pro_avatar_ch_teaser" style={{ display: 'none' }}>
             <span
               className="view_avatar_span"

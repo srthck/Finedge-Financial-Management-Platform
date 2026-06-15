@@ -15,7 +15,7 @@ class Suggested extends Component {
   }
 
   componentDidMount = () => {
-    // params: if user is on a profile of eg. noddy, then noddy won't appear on suggestions
+    // params: exclude current profile user from suggestions (e.g. if viewing market_edge's profile)
     let { dispatch, params } = this.props
     dispatch(getSuggestedUsers(params))
   }

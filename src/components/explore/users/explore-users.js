@@ -26,7 +26,7 @@ class ExploreUsers extends Component {
 
     return (
       <div>
-        <Title value="Explore users" />
+        <Title value="Discover Investors" />
 
         <FadeIn duration="300ms">
           <IsLoading loading={loading} />

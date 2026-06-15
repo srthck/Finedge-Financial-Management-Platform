@@ -8,19 +8,19 @@ import MaterialIcon from '../others/icons/material-icon'
 const NotificationsHeader = ({ len, dispatch }) => {
   let clear = () => {
     dispatch(clearNotifications())
-    Notify({ value: 'Notifications cleared!!' })
+    Notify({ value: 'Market alerts cleared.' })
   }
 
   return (
     <div className="notifications_header">
-      <span className="noti_count">{len == 0 ? 'No' : len} alerts</span>
+      <span className="noti_count">{len == 0 ? 'No' : len} market alerts</span>
 
       {len != 0 && (
         <div>
           <span
             onClick={clear}
             className="clear_noti"
-            data-tip="Clear notifications"
+            data-tip="Clear market alerts"
           >
             <MaterialIcon icon="clear_all" />
           </span>

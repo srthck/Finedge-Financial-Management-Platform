@@ -44,7 +44,7 @@ class Tagged extends Component {
         <FadeIn duration="300ms">
           <IsLoading loading={loading} />
 
-          <Title value={`${username}'s tagged posts`} />
+          <Title value={`${username}'s tagged insights`} />
 
           <div
             className={classNames(
@@ -62,8 +62,8 @@ class Tagged extends Component {
                 posts={map_posts}
                 nothingMssg={
                   Me(id)
-                    ? 'You are not tagged in any post!!'
-                    : `${username} is not tagged in any post!!`
+                    ? 'You have not been tagged in any insight yet.'
+                    : `${username} has not been tagged in any insight yet.`
                 }
               />
             </div>

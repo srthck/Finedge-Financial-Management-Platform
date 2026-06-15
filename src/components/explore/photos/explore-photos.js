@@ -22,7 +22,7 @@ class ExpPhotos extends Component {
 
     return (
       <div>
-        <Title value="Explore photos" />
+        <Title value="Explore Insights" />
 
         <FadeIn duration="300ms">
           <IsLoading loading={loading} />

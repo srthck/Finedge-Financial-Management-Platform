@@ -1,9 +1,9 @@
 import posts from './posts'
 
 export const hashtags = [
-  { hashtag: '#travel' },
-  { hashtag: '#cool' },
-  { hashtag: '#hmm' },
+  { hashtag: '#NIFTY' },
+  { hashtag: '#fintech' },
+  { hashtag: '#valueinvesting' },
 ]
 
 export default {

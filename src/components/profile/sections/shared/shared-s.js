@@ -46,7 +46,7 @@ class Shared extends Component {
         <FadeIn duration="300ms">
           <IsLoading loading={loading} />
 
-          <Title value={`${username}'s shared posts`} />
+          <Title value={`${username}'s shared insights`} />
 
           <div
             className={classNames(
@@ -62,9 +62,9 @@ class Shared extends Component {
             <div className="prajkumar">
               <MapPosts
                 posts={map_posts}
-                nothingMssg={`No one shared posts with ${
+                nothingMssg={`No insights have been shared with ${
                   Me(id) ? 'you' : username
-                }!!`}
+                } yet.`}
               />
             </div>
           </div>

@@ -25,7 +25,7 @@ const HeaderTopLinks = () => {
         activeClassName="ha_active"
         className="sp"
       >
-        <img src={`/users/${id}/avatar.jpg`} alt="avatar" className="sp_img" />
+        <img src={`/users/${id}/avatar.jpg`} alt="avatar" className="sp_img" onError={e => { e.target.onerror = null; e.target.src = '/images/spacecraft.jpg' }} />
         <span className="sp_span">{username}</span>
       </NavLink>
     </Fragment>

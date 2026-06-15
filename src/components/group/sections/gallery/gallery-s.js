@@ -36,7 +36,7 @@ class GroupGallery extends Component {
 
     return (
       <div>
-        <Title value={`${name} group's gallery`} />
+        <Title value={`${name} Investment Club — Gallery`} />
 
         <FadeIn duration="300ms">
           <IsLoading loading={loading} />

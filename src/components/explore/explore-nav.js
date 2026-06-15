@@ -18,7 +18,7 @@ const ExploreNav = ({ url }) => {
         </li>
         <li>
           <NavLink to={`${url}/explore-photos`} {...commonProps}>
-            Photos
+            Insights
           </NavLink>
         </li>
         <li>

@@ -40,7 +40,7 @@ class ExploreGroups extends Component {
             <div className="m_wrapper" style={{ width: len == 0 ? 500 : null }}>
               {len == 0 ? (
                 <div style={{ width: '100%' }}>
-                  <Nothing mssg="Sorry, no Investment Clubs to explore yet!!" />
+                  <Nothing mssg="No investment clubs to explore yet. Be the first to create one!" />
                 </div>
               ) : (
                 map_groups

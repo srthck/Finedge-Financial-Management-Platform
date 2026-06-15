@@ -46,7 +46,7 @@ class ExplorePhotoGallery extends Component {
       <Fragment>
         <div className="m_wrapper" style={{ width: len == 0 ? 500 : null }}>
           {len == 0 ? (
-            <Nothing value="Sorry, no photos to explore!!" />
+            <Nothing mssg="No market insights to explore yet. Check back soon!" />
           ) : (
             <Gallery
               photos={PHOTO_SET}

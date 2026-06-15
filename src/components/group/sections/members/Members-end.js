@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 const MembersEnd = ({ loading, len, name }) => (
   <Fragment>
     {!loading && len == 0 ? (
-      <Nothing mssg={`${name} group has no members!!`} />
+      <Nothing mssg={`${name} Investment Club has no members yet.`} />
     ) : !loading && len != 0 ? (
       <End />
     ) : null}

@@ -58,7 +58,7 @@ class UserPhotos extends Component {
         {len == 0 ? (
           <Nothing
             mssg={
-              Me(id) ? 'You have no photos!!' : `${username} has no photos!!`
+              Me(id) ? 'No insights published yet.' : `${username} has no insights yet.`
             }
           />
         ) : (

@@ -13,7 +13,8 @@ describe('Search Component', () => {
 
   // mocks search functionality and returns a new wrapper as we need to mock the AJAX request multiple times in the below test
   const mockSearch = async searchTerm => {
-    mockAxiosRequest('search-instagram', filterSearch(searchTerm))
+    mockAxiosRequest('search-finedge', filterSearch(searchTerm))
+
 
     const wrapper = shallow(<Search />)
     const mockedEvent = {

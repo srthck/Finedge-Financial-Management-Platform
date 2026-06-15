@@ -14,11 +14,11 @@ const GroupInfo = ({ gd }) => {
       <div className="pro_name">
         {group_type == 'public' ? (
           <span>
-            <FAIcon icon="globe" /> Public group
+            <FAIcon icon="globe" /> Public Investment Club
           </span>
         ) : (
           <span>
-            <FAIcon icon="lock" /> Private group
+            <FAIcon icon="lock" /> Private Investment Club
           </span>
         )}
       </div>
