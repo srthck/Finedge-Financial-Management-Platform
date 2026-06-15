@@ -16,6 +16,30 @@ Unlike traditional social platforms, FinEdge focuses on investment intelligence,
 
 ---
 
+## SCREENSHOTS
+## Application Screenshots
+
+### Login Page
+![Login Page](screenshots/login-page.png)
+
+### Signup Page
+![Signup Page](screenshots/signup-page.png)
+
+### Home Feed
+![Home Feed](screenshots/home-feed.png)
+
+### Market Discover
+![Market Discover](screenshots/market-discover.png)
+
+### Investor Profile
+![Investor Profile](screenshots/investor-profile.png)
+
+### Investment Club
+![Investment Club](screenshots/investment-club.png)
+
+### Profile Settings
+![Profile Settings](screenshots/profile-settings.png)
+
 ## Project Overview
 
 Financial communities generate enormous amounts of valuable information, but most platforms are either:
